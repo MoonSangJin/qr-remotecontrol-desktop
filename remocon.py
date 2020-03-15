@@ -64,6 +64,7 @@ async def accept(websocket, path):
     while True:
         try:
             data = await websocket.recv();
+            print(data)
             stackIn += [data]
         except:
             print("Diconnected... Find another connection")
@@ -77,4 +78,4 @@ def run ( port ):
     print("Try connect")
 
 if __name__ == "__main__":
-    run( port=2362 )
+    run( port=9220 )

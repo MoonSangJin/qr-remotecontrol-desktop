@@ -5,10 +5,10 @@ import socket
 import remocon
 
 SOCKET_IP = socket.gethostbyname_ex( socket.gethostname() )[-1][-1]
-SOCKET_PORT = 2362
+SOCKET_PORT = 9220
 
 def openServer():
-    webClientURL = "http://1000sh.iptime.org:8000/list/HDD1/1000sh-disk/_page/remocon?ip={}&port={}".format(SOCKET_IP, SOCKET_PORT)
+    webClientURL = "http://{}:5500/button.html?ip={}&port={}".format( SOCKET_IP, SOCKET_IP, SOCKET_PORT)
     print("Client: ", webClientURL)
     qrcodeImage = qrcode.make(webClientURL)
     # qrcodeImage.resize(150, 150, Image.ANTIALIAS)
