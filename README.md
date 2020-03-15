@@ -1,6 +1,6 @@
 
 # Remocon for Desktop
-you should use with 'https://github.com/1000ship/remocon-web'
+you should use with 'https://github.com/MoonSangJin/qr-remotecontrol'
 Python and Javascript use websocket
 
 ## file set
