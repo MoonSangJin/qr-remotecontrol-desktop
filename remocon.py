@@ -58,6 +58,7 @@ async def accept(websocket, path):
     while True:
         try:
             data = await websocket.recv();
+            print(data)
             stackIn += [data]
             print("Received : {}".format(data))
         except:
@@ -77,4 +78,4 @@ def run ( port ):
     print("Try connect")
 
 if __name__ == "__main__":
-    run( port=2362 )
+    run( port=9220 )
